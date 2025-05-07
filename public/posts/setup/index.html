@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Setup - Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The website is being hosted on a local desktop without any static IP address, the way it is accessible to public ip addresses is due to Cloudflare, Cloudflare allows to setup a free tunnel - think of it as a VPN to cloudflare servers, if you are using cloudflare&rsquo;s DNS servers, you can route these DNS queries to a cloudflare&rsquo;s VPN to your personal computer.
+Your personal computer needs to have the following things up and running" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/setup/">
+  <meta property="og:site_name" content="Blog">
+  <meta property="og:title" content="Setup">
+  <meta property="og:description" content="The website is being hosted on a local desktop without any static IP address, the way it is accessible to public ip addresses is due to Cloudflare, Cloudflare allows to setup a free tunnel - think of it as a VPN to cloudflare servers, if you are using cloudflare’s DNS servers, you can route these DNS queries to a cloudflare’s VPN to your personal computer.
+Your personal computer needs to have the following things up and running">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-07T15:15:59+05:30">
+    <meta property="article:modified_time" content="2025-05-07T15:15:59+05:30">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Setup">
+  <meta name="twitter:description" content="The website is being hosted on a local desktop without any static IP address, the way it is accessible to public ip addresses is due to Cloudflare, Cloudflare allows to setup a free tunnel - think of it as a VPN to cloudflare servers, if you are using cloudflare’s DNS servers, you can route these DNS queries to a cloudflare’s VPN to your personal computer.
+Your personal computer needs to have the following things up and running">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Blog</a>
+	</div>
+	<nav>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Setup</h1>
+          <div class="meta">Posted on May 7, 2025 <span class="draft-label">DRAFT</span> </div>
+        </div>
+        
+        <section class="body">
+          <p>The website is being hosted on a local desktop without any static IP address, the way it is accessible to public ip addresses is due to Cloudflare, Cloudflare allows to setup a free tunnel - think of it as a VPN to cloudflare servers, if you are using cloudflare&rsquo;s DNS servers, you can route these DNS queries to a cloudflare&rsquo;s VPN to your personal computer.</p>
+<p>Your personal computer needs to have the following things up and running</p>
+<ul>
+<li><code>WARP</code> client to connect to CloudFlare&rsquo;s infra</li>
+<li><code>cloudflared</code> running as a daemon to proxy requests</li>
+<li>your web server which will serve traffic</li>
+</ul>
+<p>Once you are done with setting up your local machine, you need to route your DNS queries to cloudflared, this can be done on the cloudflare dashboard as shown below</p>
+<p><img src="image.png" alt="alt text"></p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

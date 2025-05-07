@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 May 2025 12:34:05 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 15:15:59 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/posts/setup/</link>
+      <pubDate>Wed, 07 May 2025 15:15:59 +0530</pubDate>
+      <guid>http://localhost:1313/posts/setup/</guid>
+      <description>&lt;p&gt;The website is being hosted on a local desktop without any static IP address, the way it is accessible to public ip addresses is due to Cloudflare, Cloudflare allows to setup a free tunnel - think of it as a VPN to cloudflare servers, if you are using cloudflare&amp;rsquo;s DNS servers, you can route these DNS queries to a cloudflare&amp;rsquo;s VPN to your personal computer.&lt;/p&gt;&#xA;&lt;p&gt;Your personal computer needs to have the following things up and running&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why k64d</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
