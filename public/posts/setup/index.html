@@ -45,7 +45,7 @@ Your personal computer needs to have the following things up and running">
       <div class="post-content">
         <div class="title">
           <h1 class="title">Setup</h1>
-          <div class="meta">Posted on May 7, 2025 <span class="draft-label">DRAFT</span> </div>
+          <div class="meta">Posted on May 7, 2025</div>
         </div>
         
         <section class="body">
@@ -58,6 +58,27 @@ Your personal computer needs to have the following things up and running">
 </ul>
 <p>Once you are done with setting up your local machine, you need to route your DNS queries to cloudflared, this can be done on the cloudflare dashboard as shown below</p>
 <p><img src="image.png" alt="alt text"></p>
+<p>The image above shows how public hostname is mapped to a service which is running locally at port 1313 (I&rsquo;m running Hugo server) which is going to serve web requests from client.</p>
+<p>It is amazing how much capability unlock this gives without getting tied to any cloud provider except for Cloudflare for sure ✨</p>
+<p>PS: I forgot to mention that you do not need to buy an SSL certificate for your domain but these requests will still be served on HTTPS and browsers will not flag visits to your domain, again all thanks to Cloudflare&rsquo;s proxying.</p>
+<p>Here&rsquo;s how the final flow looks like</p>
+<pre tabindex="0"><code>
+                                                                      │
+                                                                      ▼
+
++--------+          +--------------------------+         +----------------+          +--------------------------+
+| Client |          |                          |
+|        |    ───▶  | Cloudflare DNS Resolver  |    ───▶  | DNS Resolution |   ───▶   | Cloudflare Proxy Server |
++--------+          +--------------------------+         +----------------+          +--------------------------+
+</code></pre><pre><code>                                                                  │
+                                                                  ▼
+
+
+                                    +-------------------------+ ───▶ +-----------------------------+
+                                    | Cloudflare Tunneling    |      | Local Machine (cloudflared  |
+                                    | (cloudflared daemon)    |      | + WARP connected)           |
+                                    +-------------------------+      +-----------------------------+
+</code></pre>
 
         </section>
         <div class="post-tags">
